@@ -33,16 +33,40 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="MyPlayer.cs" />
-    <Compile Include="Projectiles\Emperor.cs" />
+    <Compile Include="Enums\MessageType.cs" />
+    <Compile Include="Enums\StandClass.cs" />
+    <Compile Include="Enums\StandState.cs" />
+    <Compile Include="Items\StandArrow.cs" />
+    <Compile Include="Items\Vanity\JotaroCap.cs" />
+    <Compile Include="NPCs\TBMNpcs.cs" />
+    <Compile Include="Projectiles\Knife.cs" />
+    <Compile Include="Projectiles\Misc\TheWorldVFX.cs" />
+    <Compile Include="Projectiles\Stands\Melee\TheWorld.cs" />
+    <Compile Include="Projectiles\TheWorldFist.cs" />
+    <Compile Include="Projectiles\TBMProjectiles.cs" />
+    <Compile Include="Projectiles\UnzippedStickyFist.cs" />
+    <Compile Include="Projectiles\FistStand.cs" />
+    <Compile Include="Projectiles\Stands\EmptyStand.cs" />
+    <Compile Include="Projectiles\Stands\Melee\StickyFingers.cs" />
+    <Compile Include="Projectiles\Stands\Melee\StarPlatinum.cs" />
+    <Compile Include="Projectiles\FistBase.cs" />
+    <Compile Include="Projectiles\StickyFist.cs" />
+    <Compile Include="Projectiles\StarFist.cs" />
+    <Compile Include="StandManager.cs" />
+    <Compile Include="TBMInput.cs" />
+    <Compile Include="TBMItems.cs" />
+    <Compile Include="TBMPlayer.cs" />
     <Compile Include="Projectiles\StandBase.cs" />
-    <Compile Include="Projectiles\StarPlatinumProjectile.cs" />
     <Compile Include="SpriteBar.cs" />
     <Compile Include="CustomDrawProj.cs" />
     <Compile Include="GlowMaskPlayer.cs" />
     <Compile Include="SpriteProgressBar.cs" />
+    <Compile Include="TBMTextures.cs" />
+    <Compile Include="TBMWorld.cs" />
+    <Compile Include="TimeStopManagement.cs" />
+    <Compile Include="UIs\StaminaUIState.cs" />
     <Compile Include="UIs\UISilentButton.cs" />
-    <Compile Include="Utils.cs" />
+    <Compile Include="TBMUtils.cs" />
     <Compile Include="TBM.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -62,19 +86,37 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Xact\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Xact.dll</HintPath>
     </Reference>
-    <Reference Include="ReLogic">
+    <Reference Include="ReLogic, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Warlords\bin\Debug\ReLogic.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="Terraria">
+    <Reference Include="Terraria, Version=1.3.5.1, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Warlords\bin\Debug\Terraria.exe</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Dusts\" />
-    <Folder Include="NPCs\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Items\StandArrow.png" />
+    <Content Include="Sounds\Ari.mp3" />
+    <Content Include="Sounds\Ari1.mp3" />
+    <Content Include="Sounds\AriShort.mp3" />
+    <Content Include="Sounds\Ora.mp3" />
+    <Content Include="Sounds\OraShort.mp3" />
+    <Content Include="Sounds\Punch1.mp3" />
+    <Content Include="Sounds\Punch2.mp3" />
+    <Content Include="Sounds\Punch3.mp3" />
+    <Content Include="Sounds\Punch4.mp3" />
+    <Content Include="Sounds\StarPlatinum_Deploy.mp3" />
+    <Content Include="Sounds\StarPlatinum_Deploy2.mp3" />
+    <Content Include="Sounds\StarPlatinum_ZaWarudo.mp3" />
+    <Content Include="Sounds\StarPlatinum_ZaWarudoReleaseSFX.mp3" />
+    <Content Include="Sounds\StarPlatinum_ZaWarudoSFX.mp3" />
+    <Content Include="Sounds\StickyFingers_Deploy.mp3" />
+    <Content Include="Textures\StarFistBack.png" />
     <Content Include="Textures\Cocojumbo.png" />
     <Content Include="Textures\Cocojumbokey.png" />
     <Content Include="Textures\Cocojumbowalk.png" />
@@ -88,6 +130,11 @@
     <Content Include="Textures\StandoArrow.png" />
     <Content Include="Textures\StandoPowa.png" />
     <Content Include="Textures\Starfist.png" />
+    <Content Include="Textures\StickyFistBack.png" />
+    <Content Include="Textures\StickyFingers.png" />
+    <Content Include="Textures\StickyFist.png" />
+    <Content Include="Projectiles\Misc\TheWorldVFX.png" />
+    <Content Include="Textures\ZipperLoop.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

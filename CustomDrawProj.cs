@@ -18,7 +18,7 @@ namespace TBM
         public float BonusRotation;
         public bool AddRotation = true;
         public float Alpha = 1f;
-        public Color color = Color.White;
+        public Color color = new Color();
         public float Scale = 1f;
         public bool RotateByVel = true;
         public int FrameHeight;
@@ -42,7 +42,7 @@ namespace TBM
         {
             float offset = AddRotation ? (float)(Math.PI / 4) : 0;
             float rot = RotateByVel ? projectile.velocity.ToRotation() : 0f;
-            Color clr = color != Color.White ? color : lightColor;
+            Color clr = color != new Color() ? color : lightColor;
             Texture2D tex = ModLoader.GetTexture(TexturePath);
             Rectangle Rect = FrameHeight != 0 ? new Rectangle(0, CurrentFrame * FrameHeight, tex.Width, FrameHeight) : new Rectangle(0, 0, tex.Width, tex.Height);
             spriteBatch.Draw(

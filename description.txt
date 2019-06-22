@@ -1,0 +1,12 @@
+[c/ffff00:Terrarian's Bizzare Modventure] is a mod that aims to recreate abilities from JoJo's Bizzare Adventure as faithfully as possible, while providing a fresh way to fight in Terraria!
+[c/00ff00:Current Features:]
+-Stand Arrow which allows you acquire Stands.
+-Stamina system, a resource that you require to use your Stand's abilities!
+
+[c/0000ff:Currently Implemented Stands and their Abilities:]
+
+Melee:
+[c/000055:Star Platinum]
+-Can stop time for 7 seconds(requires at least 100 stamina). During stopped time, you cannot gain any Stamina.
+[c/222255:Sticky Fingers]
+-Can unzip its hand to attack at higher range

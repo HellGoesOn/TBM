@@ -1,0 +1,13 @@
+C:\Users\DayOrk\Documents\My Games\Terraria\ModLoader\Mod Sources\TBM\bin\Debug\TBM.dll
+C:\Users\DayOrk\Documents\My Games\Terraria\ModLoader\Mod Sources\TBM\bin\Debug\TBM.pdb
+C:\Users\DayOrk\Documents\My Games\Terraria\ModLoader\Mod Sources\TBM\bin\Debug\Microsoft.Xna.Framework.dll
+C:\Users\DayOrk\Documents\My Games\Terraria\ModLoader\Mod Sources\TBM\bin\Debug\Microsoft.Xna.Framework.Game.dll
+C:\Users\DayOrk\Documents\My Games\Terraria\ModLoader\Mod Sources\TBM\bin\Debug\Microsoft.Xna.Framework.Graphics.dll
+C:\Users\DayOrk\Documents\My Games\Terraria\ModLoader\Mod Sources\TBM\bin\Debug\Microsoft.Xna.Framework.Xact.dll
+C:\Users\DayOrk\Documents\My Games\Terraria\ModLoader\Mod Sources\TBM\bin\Debug\ReLogic.dll
+C:\Users\DayOrk\Documents\My Games\Terraria\ModLoader\Mod Sources\TBM\bin\Debug\Terraria.exe
+C:\Users\DayOrk\Documents\My Games\Terraria\ModLoader\Mod Sources\TBM\obj\Debug\TBM.csprojAssemblyReference.cache
+C:\Users\DayOrk\Documents\My Games\Terraria\ModLoader\Mod Sources\TBM\obj\Debug\TBM.csproj.CoreCompileInputs.cache
+C:\Users\DayOrk\Documents\My Games\Terraria\ModLoader\Mod Sources\TBM\obj\Debug\TBM.csproj.CopyComplete
+C:\Users\DayOrk\Documents\My Games\Terraria\ModLoader\Mod Sources\TBM\obj\Debug\TBM.dll
+C:\Users\DayOrk\Documents\My Games\Terraria\ModLoader\Mod Sources\TBM\obj\Debug\TBM.pdb
