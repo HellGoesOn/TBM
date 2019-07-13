@@ -22,13 +22,13 @@ namespace TBM.Projectiles
             _setFrame = false;
             AddRotation = false;
             projectile.timeLeft = 500;
-            projectile.width = 8;
             projectile.friendly = true;
-            DrawOrigin = new Vector2(58, 10);
+            DrawOrigin = new Vector2(34, 8);
+            projectile.width = 8;
             projectile.height = 8;
             projectile.penetrate = 1;
             color = Color.White;
-            FrameHeight = 10;
+            FrameHeight = 8;
             TexturePath = "TBM/Projectiles/Knife";
         }
         public override bool PreAI()

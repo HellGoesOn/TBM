@@ -35,7 +35,7 @@ namespace TBM.Projectiles.Stands.Melee
             }
             else
             {
-                SpecialCosts[0] = 50;
+                SpecialCosts[0] = 100;
             }
         }
         public override Texture2D StandTexture

@@ -7,6 +7,7 @@ using TBM.Projectiles;
 using TBM.Projectiles.Stands;
 using TBM.Projectiles.Stands.Melee;
 using Terraria;
+using Terraria.ID;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 
@@ -28,6 +29,7 @@ namespace TBM.Items
             item.useAnimation = 20;
             item.rare = -12;
             item.useTime = 20;
+			item.maxStack = 999;
         }
         public override bool CanUseItem(Player player)
         {

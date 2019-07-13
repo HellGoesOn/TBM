@@ -34,13 +34,15 @@ namespace TBM.Projectiles
         {
             if(TBMWorld.Get().TimeStopDuration <= 0)
                 TBMPlayer.Get(Main.player[projectile.owner]).Stamina += 1;
-            target.immuneTime = 10;
+            TBMUtils.CircleDust(projectile.Center, projectile.velocity, DustID.AncientLight);
+            Main.PlaySound(mod.GetLegacySoundSlot(SoundType.Custom, "Sounds/Punch" + Main.rand.Next(1, 5)).WithVolume(0.35f));
         }
         public override void OnHitPvp(Player target, int damage, bool crit)
         {
             if (TBMWorld.Get().TimeStopDuration <= 0)
                 TBMPlayer.Get(Main.player[projectile.owner]).Stamina += 1;
-            target.immuneTime = 10;
+            TBMUtils.CircleDust(projectile.Center, projectile.velocity, DustID.AncientLight);
+            Main.PlaySound(mod.GetLegacySoundSlot(SoundType.Custom, "Sounds/Punch" + Main.rand.Next(1, 5)).WithVolume(0.35f));
         }
         public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
         {

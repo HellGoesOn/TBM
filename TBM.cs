@@ -26,11 +26,11 @@ namespace TBM
             switch (type)
             {
                 case MessageType.MyStandID:
-                    Player player = Main.player[reader.ReadByte()];
-                    TBMPlayer.Get(player).MyStandProjectile = Main.projectile[reader.ReadByte()];
+                    Player player = Main.player[reader.ReadInt32()];
+                    TBMPlayer.Get(player).MyStandProjectile = Main.projectile[reader.ReadInt32()];
                     break;
                 case MessageType.IsInRush:
-                    player = Main.player[reader.ReadByte()];
+                    player = Main.player[reader.ReadInt32()];
                     TBMPlayer.Get(player).IsStandUser = reader.ReadBoolean();
                     break;
                 case MessageType.TimeStopDuration:

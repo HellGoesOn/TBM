@@ -80,15 +80,15 @@ namespace TBM
                 {
                     ModPacket modPacket = mod.GetPacket();
                     modPacket.Write((byte)MessageType.MyStandID);
-                    modPacket.Write((byte)player.whoAmI);
-                    modPacket.Write((byte)MyStandProjectile.whoAmI);
+                    modPacket.Write((int)player.whoAmI);
+                    modPacket.Write((int)MyStandProjectile.whoAmI);
                     modPacket.Send();
                 }
                 if (tbm.InRush != InRush)
                 {
                     ModPacket modPacket = mod.GetPacket();
                     modPacket.Write((byte)MessageType.IsInRush);
-                    modPacket.Write((byte)player.whoAmI);
+                    modPacket.Write((int)player.whoAmI);
                     modPacket.Write((bool)InRush);
                     modPacket.Send();
                 }

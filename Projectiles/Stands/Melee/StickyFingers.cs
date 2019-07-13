@@ -55,7 +55,7 @@ namespace TBM.Projectiles.Stands.Melee
                     Owner.direction = 1;
                 TBMPlayer.Get(Owner).PreRushDirection = Owner.direction;
             }
-            if(_attackCounter < 1)
+            if (_attackCounter < 1)
             {
                 Projectile.NewProjectile(projectile.Center + new Vector2(34 * Main.player[projectile.owner].direction, -14), FistRushVelocity, mod.ProjectileType<UnzippedStickyFist>(), 60, 2.5f, projectile.owner);
             }

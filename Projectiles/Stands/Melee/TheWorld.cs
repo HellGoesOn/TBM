@@ -129,9 +129,9 @@ namespace TBM.Projectiles.Stands.Melee
             }
             if (_attackCounter < 1)
             {
-                for (int i = 0; i < 10; i++)
+                for (int i = 0; i < 8; i++)
                 {
-                    Projectile.NewProjectile(projectile.Center + new Vector2(0, Main.rand.Next(-25, 25)).RotatedBy(FistRushVelocity.SafeNormalize(-Vector2.UnitY).ToRotation()), FistRushVelocity, mod.ProjectileType<Knife>(), 20, 0f, projectile.owner);
+                    Projectile.NewProjectile(projectile.Center + new Vector2(Main.rand.Next(-16, 16), Main.rand.Next(-25, 25)).RotatedBy(FistRushVelocity.SafeNormalize(-Vector2.UnitY).ToRotation()), FistRushVelocity, mod.ProjectileType<Knife>(), 22, 0f, projectile.owner);
                 }
             }
             if (++_attackCounter < length)

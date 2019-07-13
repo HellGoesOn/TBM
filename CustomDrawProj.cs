@@ -43,7 +43,7 @@ namespace TBM
             float offset = AddRotation ? (float)(Math.PI / 4) : 0;
             float rot = RotateByVel ? projectile.velocity.ToRotation() : 0f;
             Color clr = color != new Color() ? color : lightColor;
-            Texture2D tex = ModLoader.GetTexture(TexturePath);
+            Texture2D tex = ModContent.GetTexture(TexturePath);
             Rectangle Rect = FrameHeight != 0 ? new Rectangle(0, CurrentFrame * FrameHeight, tex.Width, FrameHeight) : new Rectangle(0, 0, tex.Width, tex.Height);
             spriteBatch.Draw(
                 tex,

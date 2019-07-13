@@ -28,7 +28,7 @@ namespace TBM.Items.Vanity
         }
         public override void UpdateEquip(Player player)
         {
-            TBMPlayer.Get(player).StaminaMax += 50;
+            TBMPlayer.Get(player).StaminaMax += 150;
         }
     }
     public class JotaroPlayer : ModPlayer
